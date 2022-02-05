@@ -30,7 +30,16 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -39,21 +48,49 @@ body {
 }
 
 .page-header {
-  background-color: #ffffff;
+  width: 1160px;
+  margin: 0 auto;
+  background-color: #FFE17F;
   color: #000000;
 }
 
 .navigation {
   background-color: #FFE17F;
   color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.navigation-user {
+  display: flex;
+  justify-content: space-between;
+  width: 520px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  padding-left: 60px;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  width: 520px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  padding-left: 60px;
 }
 
 .navigation-user-link {
+  width: 110px;
   color: #000000;
   text-decoration: none;
 }
 
 .catalog-button {
+  width: 293px;
   font-family: "Raleway", sans-serif;
   color: #000000;
   line-height: 21px;
@@ -79,8 +116,29 @@ body {
   text-decoration: none;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .main-index {
   background-color: #ffffff;
+}
+
+.popular-products {
+  display: flex;
+}
+
+.slider {
+  width: 560px;
+}
+
+.slider-description {
+  width: 545px;
 }
 
 .main-title {
@@ -118,10 +176,18 @@ body {
 }
 
 .products-list {
+  display: flex;
+  justify-content:space-between;
+  margin: 0;
+  padding: 0;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
+}
+
+.products-category {
+  width: 160px;
 }
 
 .products-category-link {
@@ -134,6 +200,7 @@ body {
 }
 
 .services {
+  display: flex;
   background: url(../images/delivery_man.svg) no-repeat 75% 100%;
   background-color: #F0F0F0;
   margin-bottom: 70px;
@@ -154,6 +221,10 @@ body {
 .services-button-current {
   background-color: #000000;;
   color: #FFE17F;
+}
+
+.services-item-description {
+  width: 448px;
 }
 
 .services-item-title {
@@ -181,6 +252,15 @@ body {
   background-color: #FFE17F;
 }
 
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 520px;
+}
+
 .about-us-title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -194,6 +274,10 @@ body {
   line-height: 20px;
   letter-spacing: -0.02em;
   text-decoration: none;
+}
+
+.contacts {
+  width: 520px;
 }
 
 .contacts-title {
@@ -254,8 +338,24 @@ body {
   color: #FFFFFF;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.footer-address-and-logo {
+  width: 234px;
+}
+
 .footer-contacts-adress {
   font-style: normal;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 444px;
 }
 
 .footer-navigation-list-link {
@@ -269,13 +369,26 @@ body {
   text-decoration: none;
 }
 
+.footer-social {
+  display: flex;
+}
+
 .footer-contacts-phone-link {
   color:#FFFFFF;
   font-style: normal;
 }
 
 .catalog-monopods-products {
+  display: flex;
   background-color: #F0F0F0;
+}
+
+.catalog-monopods-filter {
+  width: 320px;
+}
+
+.monopods-right-column {
+  width: 840px;
 }
 
 .product-card-list-and-pagination {
