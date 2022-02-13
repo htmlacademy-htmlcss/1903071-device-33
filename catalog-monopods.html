@@ -133,17 +133,18 @@
             </form>
             </div>
             <div class="monopods-right-column">
-            <h2 class="catalog-monopods-title">Сортировка:</h2>
-            <select class="select-control">
-              <option value="popular">Популярные</option>
-            </select>
-            <button class="sorting-button" type="button" name="ascending">
-              <img class="sorting-button-image" src="images/ascending.svg">
-            </button>
-            <button class="sorting-button" type="button" name="descending">
-              <img class="sorting-button-image" src="images/descending.svg">
-            </button>
-            <div class="product-card-list-and-pagination">
+              <div class="sorting-container">
+                <h2 class="sorting-container-title">Сортировка:</h2>
+                <select class="select-control">
+                  <option value="popular">Популярные</option>
+                </select>
+                <button class="sorting-button" type="button" name="ascending">
+                  <img class="sorting-button-image" src="images/ascending.svg">
+                </button>
+                <button class="sorting-button" type="button" name="descending">
+                  <img class="sorting-button-image" src="images/descending.svg">
+                </button>
+              </div>
               <ul class="product-card-list">
                 <li class="product-card">
                   <a class="product-card-link" href="#">
@@ -176,8 +177,8 @@
               </ul>
               <button class="button-show-more" type="button">Загрузить еще</button>
               <ul class="pagination">
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-prev pagination-disabled" href="#">Назад</a>
+                <li class="pagination-item pagination-item-prev">
+                  <a class="pagination-link pagination-link-prev pagination-disabled" href="#">Назад</a>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">1</a>
@@ -187,6 +188,9 @@
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">...</a>
                 </li>
                 <li class="pagination-item visually-hidden">
                   <a class="pagination-link" href="#">4</a>
@@ -224,11 +228,10 @@
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">15</a>
                 </li>
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-next" href="#">Вперед</a>
+                <li class="pagination-item pagination-item-next">
+                  <a class="pagination-link pagination-link-next" href="#">Вперед</a>
                 </li>
               </ul>
-            </div>
             </div>
           </div>
         </section>
