@@ -775,6 +775,10 @@ body {
   text-decoration-line: none;
 }
 
+.product-card-image {
+  display: block;
+}
+
 .product-card-link {
   display: block;
   text-decoration-line: none;
