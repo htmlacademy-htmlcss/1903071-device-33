@@ -20,11 +20,16 @@
         </form>
         <ul class="navigation-user navigation-list">
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
+            <a class="navigation-user-link log-in" href="#">
               <svg  class="navigation-user-image" aria-hidden="true" focusable="false" width="14" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M.5 12.39h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5s-3.5 1.6-3.5 3.5c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.5Z" fill="#000"/>
               </svg>
               Войти
+            </a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link log-out" href="#">
+              Выйти
             </a>
           </li>
           <li class="navigation-user-item">
@@ -37,6 +42,7 @@
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">
+              <span class="cart-number"></span>
               <svg class="navigation-user-image" aria-hidden="true" focusable="false" width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="m15.3 5.39-3.5.2L8.6.69c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.29l2.2 3.2H5.9L8 2.29Z" fill="#000"/>
               </svg>
@@ -126,7 +132,7 @@
     </header>
     <main class="main-index main-container">
       <h1 class="visually-hidden">Интернет-магазин "Device"</h1>
-      <section class="popular-products">
+      <section class="popular-products slider-first">
         <div class="popular-products-number-background">
         </div>
         <div class="slider">
@@ -175,6 +181,108 @@
               <dt class="specifications-title">Радиус поражения</dt>
               <dd class="specifications-description">50 м</dd>
             </dl >
+          </div>
+        </div>
+      </section>
+      <section class="popular-products slider-second">
+        <div class="popular-products-number-background">
+        </div>
+        <div class="slider">
+          <h2 class="visually-hidden">Популярные товары</h2>
+          <img class="slider-image" src="images/slider_2.png" alt="Фитнес-браслет" width="560" height="560">
+          <button class="slider-button slider-prev" type="button">
+            <img class="slider-button-image" src="images/arrow_prev.svg">
+            <span class="visually-hidden">Предыдущий товар</span>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <img class="slider-button-image" src="images/arrow_next.svg">
+            <span class="visually-hidden">Следующий товар</span>
+          </button>
+        </div>
+        <div class="slider-description">
+          <p class="main-title">Худеем
+            правильно!</p>
+          <p class="main-title-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a href="#" class="button button-description">
+            Подробнее
+          </a>
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ol>
+          <div class="specifications">
+            <dl class="specifications-section">
+              <dt class="specifications-title">Без подзарядки</dt>
+              <dd class="specifications-description">48 часов</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+      <section class="popular-products slider-three">
+        <div class="popular-products-number-background">
+        </div>
+        <div class="slider">
+          <h2 class="visually-hidden">Популярные товары</h2>
+          <img class="slider-image" src="images/slider_3.png" alt="Самая длинная селфи палка" width="560" height="560">
+          <button class="slider-button slider-prev" type="button">
+            <img class="slider-button-image" src="images/arrow_prev.svg">
+            <span class="visually-hidden">Предыдущий товар</span>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <img class="slider-button-image" src="images/arrow_next.svg">
+            <span class="visually-hidden">Следующий товар</span>
+          </button>
+        </div>
+        <div class="slider-description">
+          <p class="main-title">Делай селфи,
+            как Бен Стиллер!</p>
+          <p class="main-title-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+          <a href="#" class="button button-description">
+            Подробнее
+          </a>
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ol>
+          <div class="specifications">
+            <dl class="specifications-section">
+              <dt class="specifications-title">Длина палки</dt>
+              <dd class="specifications-description">8,5 м</dd>
+            </dl>
+            <dl class="specifications-section">
+              <dt class="specifications-title">Вес палки</dt>
+              <dd class="specifications-description">5 кг</dd>
+            </dl>
+            <dl class="specifications-section">
+              <dt class="specifications-title">Материал</dt>
+              <dd class="specifications-description">Карбон</dd>
+            </dl>
           </div>
         </div>
       </section>
@@ -246,11 +354,23 @@
               <button class="button services-button" type="button">Кредит</button>
             </li>
           </ul>
-          <div class="services-item-description">
+          <div class="services-item-description services-item-description-delivery">
             <h3 class="services-item-title">Доставка</h3>
             <p class="services-item-description-text">Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно! Ведь
               мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+          </div>
+          <div class="services-item-description services-item-description-warranty">
+            <h3 class="services-item-title">Гарантия</h3>
+            <p class="services-item-description-text">Если из-за возгорания купленного у нас товара у вас
+              сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.
+            </p>
+          </div>
+          <div class="services-item-description services-item-description-credit">
+            <h3 class="services-item-title">Кредит</h3>
+            <p class="services-item-description-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
             </p>
           </div>
         </div>
@@ -262,9 +382,11 @@
           </svg>
         </span>
         <p class="rare-product-order-title">Доставим редкий товар под заказ</p>
-        <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="#000">
-          <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z"/></g>
-        </svg>
+        <button class="rare-product-tooltip-toggle">
+          <svg class="rare-product-tooltip-icon" aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="#000">
+            <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z"/></g>
+          </svg>
+        </button>
       </div>
       <div class="index-columns">
       <section class="about-us">
@@ -406,6 +528,7 @@
             <div class="field-group">
               <label class="field-group-title" for="your-email">Ваш e-mail:</label>
               <input class="delivery-form-field delivery-form-field-email" type="email" id="your-email" name="your-email" placeholder="Введите e-mail">
+              <p class="delivery-form-field-invalid">Забавный у вас адрес</p>
               <svg class="field-group-image" aria-hidden="true" focusable="false" width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.6 8c-.4 0-.6-.1-1-.3L0 4v7c0 .6.4 1 .9 1h13.2c.6 0 .9-.4.9-1V4L8.5 7.7c-.4.2-.6.3-.9.3Zm6.5-8H.9C.4 0 0 .5 0 1v.8L7.5 6 15 1.8V1c0-.5-.4-1-.9-1Z" fill="#B3B3B3"/>
               </svg>
