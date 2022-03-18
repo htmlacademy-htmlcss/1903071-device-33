@@ -130,10 +130,11 @@ body {
 
 .search {
   position: relative;
+  top: -3px;
   width: 365px;
   border: 2px solid #000000;
   border-radius: 50px 0px 0px 50px;
-  padding: 8px 48px;
+  padding: 8px 45px;
   color: #000000;
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -145,7 +146,7 @@ body {
 
 .search-image {
   position: absolute;
-  top: 12px;
+  top: 9px;
   left: 16px;
   fill: #000000;
   z-index: 1;
@@ -171,10 +172,11 @@ body {
 
 .navigation-search-button {
   position: relative;
+  top: -3px;
   right: 10px;
   width: 156px;
   border: 2px solid #000000;
-  padding: 8px 55px;
+  padding: 8px 52px;
   border-radius:  0px 50px 50px 0px ;
   color: #000000;
   font-family: "Rubik", sans-serif;
@@ -206,6 +208,7 @@ body {
 
 .navigation-user-item {
   position: relative;
+  top: 2px;
 }
 
 .navigation-user-item:nth-child(3) {
@@ -424,14 +427,17 @@ body {
 
 .navigation-list-item {
   position: relative;
+  top: 3px;
   margin-right: 46px;
 }
 
 .navigation-list-item-delivery {
+  right: -3px;
   margin-left: 226px;
 }
 
 .navigation-list-item-contacts {
+  right: -3px;
   margin-right: 0;
 }
 
@@ -606,7 +612,7 @@ body {
   position: relative;
   top: -35px;
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .slider {
@@ -835,7 +841,7 @@ body {
   width: 160px;
   color: #000000;
   text-decoration: none;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
   box-sizing: border-box;
 }
 
@@ -963,7 +969,7 @@ body {
 }
 
 .services-item-description-delivery {
-  background: url(../images/delivery_man.svg) no-repeat 558px 0;
+  background: url(../images/delivery_man.svg) no-repeat 558px 5px;
 }
 
 .services-item-description-warranty {
@@ -1001,7 +1007,7 @@ body {
   position: relative;
   display: flex;
   width: 1160px;
-  margin: 0 auto 112px;
+  margin: 0 auto 115px;
   background-color: #F0F0F0;
   box-sizing: border-box;
 }
@@ -1052,7 +1058,7 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  margin: 40px 125px 40px 0px;
+  margin: 42px 122px 38px 0px;
   padding: 0;
 }
 
@@ -1130,8 +1136,8 @@ body {
 
 .delivery-companys-item:before {
   position: absolute;
-  top: 5px;
-  left: -35px;
+  top: 6px;
+  left: -34px;
   content: "";
   width: 8px;
   height: 8px;
@@ -1255,7 +1261,7 @@ body {
   font-size: 50px;
   line-height: 50px;
   padding-top: 64px;
-  padding-left: 10px;
+  padding-left: 8px;
   margin: 0;
 }
 
@@ -1320,6 +1326,10 @@ body {
   opacity: 0.5;
 }
 
+.mailing-list-input:required {
+  border-bottom: solid 3px #C4C4C4;
+}
+
 .subscribe {
   position: relative;
   left: -5px;
@@ -1372,7 +1382,6 @@ body {
 .footer-address-and-logo {
   width: 234px;
   margin-top: 62px;
-  margin-left: 5px;
 }
 
 .page-footer-logo-link {
@@ -1549,7 +1558,7 @@ body {
   display: block;
   width: 115px;
   height: 33px;
-  margin-left: 55px;
+  margin-left: 58px;
 }
 
 .htmlacademy-logo-link .htmlacademy-logo {
@@ -1722,6 +1731,10 @@ span .field-group-title {
   opacity: 0.3;
 }
 
+.delivery-form-field:not(.delivery-form-field-email):required {
+  outline: none;
+}
+
 .delivery-form-field-disabled {
   opacity: 0.3;
 }
@@ -1751,7 +1764,7 @@ span .field-group-title {
 .tooltip-toggle {
   position: absolute;
   top: -2px;
-  left: 125px;
+  left: 120px;
   border: none;
   background-color: #FFE17F;
   padding: 0;
@@ -1806,11 +1819,15 @@ span .field-group-title {
   display: flex;
 }
 
+.number-wrapper:invalid {
+  outline: 2px solid #FF3D3D;
+}
+
 .delivery-form-field-number {
   width: 40px;
   height: 40px;
   margin-right: 0;
-  margin-bottom: 52px;
+  margin-bottom: 44px;
   padding: 10px;
   text-align: center;
   -moz-appearance: textfield;
@@ -1838,14 +1855,20 @@ span .field-group-title {
 
 .number-button:hover {
   color: rgba(0, 0, 0, 0.6);
+  background-color: #EBEBEB;
 }
 
 .number-button:active {
   color: rgba(0, 0, 0, 0.3);
+  background-color: #F0F0F0;
 }
 
 .number-button:focus {
   outline: 2px solid #AF4FFF;
+}
+
+.number-button:disabled {
+  opacity: 0.3;
 }
 
 .delivery-form-field-button {
@@ -1892,7 +1915,7 @@ span .field-group-title {
 /*catalog*/
 
 .main-inner {
-  padding-top: 35px;
+  padding-top: 38px;
 }
 
 .inner-header {
@@ -2002,7 +2025,7 @@ span .field-group-title {
 
 .monopods-filter-group {
   margin: 0;
-  margin-bottom: 68px;
+  margin-bottom: 67px;
   padding: 0;
   border: none;
 }
@@ -2098,7 +2121,7 @@ span .field-group-title {
 
 .monopods-filter-title-color,
 .monopods-filter-title-bluetooth {
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 
 .monopods-filter-list {
@@ -2166,7 +2189,7 @@ span .field-group-title {
 }
 
 .filter-bluetooth {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .filter-bluetooth-item:not(:last-child) {
@@ -2292,8 +2315,8 @@ span .field-group-title {
 .product-card-list {
   display: grid;
   grid-template-columns: 360px 360px;
-  gap: 48px 40px;
-  margin: 70px 40px 48px 40px;
+  gap: 44px 40px;
+  margin: 70px 40px 44px 40px;
   padding: 0;
   list-style-type: none;
 }
@@ -2465,7 +2488,7 @@ span .field-group-title {
   color: #444444;
   opacity: 0.3;
   margin: 0;
-  padding: 10px 15px;
+  padding: 10px 10px;
 }
 
 .pagination-link-disabled {
